@@ -7,35 +7,17 @@
         <link rel="stylesheet" type="text/css" href="http://cdn.xoul.kr/bootstrap/latest/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="http://cdn.xoul.kr/fonts/nanumbarungothic.css">
         <link rel="stylesheet" type="text/css" href="http://cdn.xoul.kr/fonts/nanumbarungothic.css">
+
         <style>
-            @media screen and (min-width: 992px) {
-                .container {
-                    width: 750px; // 970px
-                }
-            }
-            
-            @media screen and (min-width: 768px) {
-                body {
-                    margin-top: 60px;
-                }
-                
-                .left {
-                    margin-right: 30px;
-                    float: left;
-                }
-                
-                .clearfix {
-                    overflow: auto;
-                    zoom: 1; // IE6
-                }
-                
-                h1 {
-                    margin-top: 35px;
-                }
-            }
-            
             body {
                 margin: 20px;
+                font-family: 'NanumBarunGothic';
+            }
+
+            .container {
+                width: 550px;
+                margin-left: auto;
+                margin-right: auto;
             }
             
             .profileimg {
@@ -43,41 +25,63 @@
                 width: 150px;
                 height: 150px;
             }
-            
-            body {
-                font-family: 'NanumBarunGothic';
-            }
-            
+
             h1 {
                 font-weight: bold;
                 font-size: 3em;
                 color: #555;
             }
-            
+
             h2 {
                 font-size: 1.6em;
                 font-weight: normal;
-                color: #666;
-                margin-top: 0;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            ul {
+                padding-left: 30px;
+            }
+
+            @media screen and (min-width: 550px) {
+                .content-wrap {
+                    margin-left: 30px;
+                }
+
+                .profile-wrap, .content-wrap {
+                    float: left;
+                }
+
+                h1 {
+                    margin-top: 35px;
+                }
+            }
+            
+            @media screen and (max-width: 550px) {
             }
         </style>
-        <title>전수열</title>
+        <title>전수열 - Suyeol Jeon</title>
     </head>
     <body>
         <div class="container">
-            <div class="left">
+            <div class="profile-wrap">
                 <img class="profileimg" src="http://graph.facebook.com/devxoul/picture?type=large" alt="xoul.kr" />
             </div>
-            <div class="right">
-                <div>
-                    <h1>
-                        전수열
-                        <small>/ Jeon Su Yeol</small>
-                    </h1>
-                    <h2>
-                        <a href="./resume.html">Formal Resume Here</a>
-                    </h2>
-                </div>
+            <div class="content-wrap">
+                <h1>
+                    전수열
+                    <small>/ Suyeol Jeon</small>
+                </h1>
+                <p>
+                    I'm a software developer in Seoul.
+                </p>
+                <ul>
+                    <li><a href="/resume">Formal Resume</a></li>
+                    <li><a href="http://github.com/devxoul">GitHub</a></li>
+                    <li><a href="https://facebook.com/devxoul">Facebook</a></li>
+                </ul>
             </div>
         </div>
     </body>
